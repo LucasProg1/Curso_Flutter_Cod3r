@@ -26,7 +26,7 @@ class Users with ChangeNotifier {
     }
 
     if (user.id != null &&
-        user.id!.trim().isNotEmpty &&
+        user.id!.trim().isNotEmpty && //edita o cadastro
         _itens.containsKey(user.id)) {
       _itens.update(
         user.id!,

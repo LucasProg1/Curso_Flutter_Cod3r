@@ -31,7 +31,7 @@ class UserList extends StatelessWidget {
             icon: const Icon(Icons.add),
           ),
         ],
-      ),
+      ), //cria uma lista de acordo com o numero de usuarios
       body: ListView.builder(
         itemCount: users.count,
         itemBuilder: (ctx, i) => UserTile(users.byIndex(i)),

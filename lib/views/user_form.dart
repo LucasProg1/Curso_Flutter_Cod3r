@@ -14,12 +14,10 @@ class _UserFormState extends State<UserForm> {
   final Map<String, String> _formData = {};
 
   void _loadFormData(User user) {
-    if (user != null) {
-      _formData['id'] = user.id!;
-      _formData['name'] = user.name;
-      _formData['email'] = user.email;
-      _formData['avatarUrl'] = user.avatarUrl;
-    }
+    _formData['id'] = user.id!;
+    _formData['name'] = user.name;
+    _formData['email'] = user.email;
+    _formData['avatarUrl'] = user.avatarUrl;
   }
 
   @override
